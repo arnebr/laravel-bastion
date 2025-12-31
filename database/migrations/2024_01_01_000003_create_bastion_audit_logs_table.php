@@ -24,7 +24,7 @@ return new class () extends Migration {
             $table
                 ->foreignId('bastion_token_id')
                 ->index()
-                ->references('bastion_tokens')
+                ->constrained('bastion_tokens')
                 ->cascadeOnDelete();
 
             // What happened
